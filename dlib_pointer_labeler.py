@@ -499,6 +499,7 @@ class dlib_pointer:
 
         return converted_image
 
+#sad
 if __name__ == '__main__':
     PATH = "images"
     pointer = dlib_pointer()
