@@ -499,7 +499,6 @@ class dlib_pointer:
 
         return converted_image
 
-#sad
 if __name__ == '__main__':
     PATH = "images"
     pointer = dlib_pointer()
@@ -527,12 +526,13 @@ if __name__ == '__main__':
                         evaluate_of_face = pointer.evaluate(mouths, eyes_o,smiles)
                         print(evaluate_of_face)
                         img = pointer.show_image(justret=True)
+                        return board,board2,mouths,eyes_o,smiles
 
-                        cv2.imshow("board",board)
-                        cv2.imshow("board2",board2)
-                        cv2.imshow("img",img)
-                        cv2.waitKey(0)
-                        cv2.destroyAllWindows()
+                        # cv2.imshow("board",board)
+                        # cv2.imshow("board2",board2)
+                        # cv2.imshow("img",img)
+                        # cv2.waitKey(0)
+                        # cv2.destroyAllWindows()
 
     def on_cam(cam_n = 0,flip = True):
 
